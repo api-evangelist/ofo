@@ -1,0 +1,73 @@
+generated: '2026-08-26'
+method: searched
+source: >-
+  https://registry.npmjs.org/ofo, https://pypi.org/pypi/ofo/json, and a search of npm, PyPI,
+  RubyGems, Packagist, crates.io, NuGet and Maven Central for first-party Ofo client libraries.
+summary: >-
+  Ofo never operated a developer program and shipped no official client libraries in any language.
+  The only package that wraps Ofo's endpoints is a third-party, unofficial Node client written
+  against the private consumer mobile-app API; its source repository no longer exists and its last
+  release predates the company's collapse. No `SDKs` pointer is wired into apis.yml, because
+  `official: true` is not true of anything below.
+official_sdk_count: 0
+package_count: 1
+packages:
+- name: ofo
+  registry: npm
+  url: https://www.npmjs.com/package/ofo
+  official: false
+  language: JavaScript
+  license: MIT
+  version: 1.1.2
+  published: '2018-08-14'
+  first_published: '2016-11-30'
+  author: Lsong <song940@gmail.com>
+  description: free bike for everyone
+  source_code: https://github.com/song940/ofo
+  source_code_status: 404
+  note: >-
+    Third-party, unofficial. An independent developer's Node client for Ofo's private mobile-app
+    API (the same surface documented at github.com/ubahnverleih/WoBike). Last published
+    2018-08-14 — four months before the December 2018 deposit-refund crisis and roughly two years
+    before Ofo stopped operating bikes — and the declared source repository github.com/song940/ofo
+    now returns 404. Recorded as ecosystem evidence, not as an Ofo SDK.
+negative_results:
+- registry: pypi
+  query: ofo
+  result: >-
+    A name-squatted placeholder ("My short description for my project", version 0.1.0, home_page
+    github.com/me/myproject). Unrelated to the company.
+- registry: npm
+  query: ofo bike / bike sharing
+  result: No first-party or Ofo-related package.
+- registry: rubygems
+  query: ofo
+  result: No Ofo package.
+- registry: packagist
+  query: ofo
+  result: No Ofo package.
+- registry: crates.io
+  query: ofo
+  result: No Ofo package.
+- registry: nuget
+  query: ofo
+  result: No Ofo package.
+- registry: maven-central
+  query: ofo
+  result: No Ofo package.
+- registry: github
+  query: orgs/ofo
+  result: >-
+    404 — there is no Ofo GitHub organization. github.com/ofo is an unrelated personal User
+    account (id 3396715), not the company.
+x-evidence:
+  fetched: '2026-08-26'
+  probes:
+  - url: https://registry.npmjs.org/ofo
+    status: 200
+  - url: https://pypi.org/pypi/ofo/json
+    status: 200
+  - url: https://api.github.com/repos/song940/ofo
+    status: 404
+  - url: https://api.github.com/orgs/ofo
+    status: 404

@@ -1,0 +1,128 @@
+generated: '2026-08-26'
+method: probed
+source: https://ofo.com/.well-known/
+host: https://ofo.com
+resolvable: partial
+dns:
+  status: NOERROR
+  a:
+  - 47.93.164.86
+  delegated_nameservers:
+  - DNS23.HICHINA.COM
+  - DNS24.HICHINA.COM
+  registrar: Alibaba Cloud Computing (Beijing) Co., Ltd.
+  registry_expiry: '2027-09-08'
+  note: >-
+    ofo.com still holds a live registration through Alibaba Cloud and still resolves to a single
+    Aliyun address, but the origin refuses connections on both port 80 and port 443, so no HTTP
+    request to any ofo.com host can complete. The status column below is 0 (TCP connection never
+    established), not an HTTP status. The last Wayback capture of https://www.ofo.com/ is
+    2023-09-28.
+reassigned_host_probe:
+  host: https://ofo.so
+  note: >-
+    ofo.so was one of Ofo's historic consumer hosts, but the domain dropped and was re-registered
+    through Dynadot on 2025-04-21 by an unrelated party. It now sits behind Cloudflare and 302s
+    every request to an arcade-game monetisation lander at arcade.now with the parking parameter
+    subid=ofo.so. These probes are recorded for provenance only and are NOT attributed to Ofo.
+  documents:
+  - path: /
+    status: 200
+    note: Redirects to https://arcade.now/lp1/play?subid=ofo.so — a parked-domain lander, not Ofo.
+  - path: /robots.txt
+    status: 200
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+  - path: /openapi.json
+    status: 404
+  - path: /swagger.json
+    status: 404
+  - path: /llms.txt
+    status: 404
+x-evidence:
+  fetched: '2026-08-26'
+  note: >-
+    No pointer is emitted into apis.yml for this file. Nothing returned a 200 carrying a real
+    document on any host Ofo controls, so there is no WellKnown, SecurityTxt or AgentCard surface
+    to assert. This artifact records a verified absence, not a presence.
+hosts:
+- host: https://ofo.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 0
+  - path: /.well-known/openid-configuration
+    status: 0
+  - path: /.well-known/oauth-authorization-server
+    status: 0
+  - path: /.well-known/api-catalog
+    status: 0
+  - path: /.well-known/ai-plugin.json
+    status: 0
+  - path: /.well-known/agent-card.json
+    status: 0
+  - path: /.well-known/agent.json
+    status: 0
+  - path: /openapi.json
+    status: 0
+  - path: /swagger.json
+    status: 0
+- host: https://one.ofo.com
+  note: >-
+    The private mobile-app API base documented by third-party reverse engineering
+    (github.com/ubahnverleih/WoBike, Ofo.md, itself headed "Ofo (defunct)"). Resolves to
+    47.88.65.49 but refuses connections. Never a published, first-party developer surface.
+  documents:
+  - path: /.well-known/security.txt
+    status: 0
+  - path: /.well-known/openid-configuration
+    status: 0
+  - path: /.well-known/oauth-authorization-server
+    status: 0
+  - path: /.well-known/api-catalog
+    status: 0
+  - path: /.well-known/ai-plugin.json
+    status: 0
+  - path: /.well-known/agent-card.json
+    status: 0
+  - path: /.well-known/agent.json
+    status: 0
+  - path: /openapi.json
+    status: 0
+  - path: /swagger.json
+    status: 0
+  - path: /llms.txt
+    status: 0
+- host: https://ofobike.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 0
+  - path: /.well-known/openid-configuration
+    status: 0
+  - path: /.well-known/oauth-authorization-server
+    status: 0
+  - path: /.well-known/api-catalog
+    status: 0
+  - path: /.well-known/ai-plugin.json
+    status: 0
+  - path: /.well-known/agent-card.json
+    status: 0
+  - path: /.well-known/agent.json
+    status: 0
+  - path: /openapi.json
+    status: 0
+  - path: /swagger.json
+    status: 0
+  - path: /llms.txt
+    status: 0

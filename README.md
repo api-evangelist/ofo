@@ -64,5 +64,20 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Ofo is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://forgeglobal.com/ofo_stock/
+Ofo (Chinese: 小黄车, "little yellow bike") was a Beijing dockless bicycle-sharing company founded in
+2014 by Dai Wei and four classmates from the Peking University cycling club, and launched publicly on
+7 September 2015. At its 2017 peak it had deployed more than 10 million bicycles across roughly 250
+cities in 20 countries and was valued at around US$2 billion. Ofo's bikes were unlocked exclusively
+through its own consumer mobile app; the company never operated a developer portal, never published a
+machine-readable API contract, and never shipped official client SDKs. It withdrew from most
+international markets in July 2018, collapsed under a deposit-refund backlog affecting more than 10
+million users from December 2018, and had ceased bike-rental operations by 2020.
+
+**Status: defunct — no API surface.** `ofo.com` still holds a live registration and still resolves,
+but the origin refuses connections on both port 80 and port 443, so no `/.well-known/`, `/openapi.json`
+or `/llms.txt` probe can complete. The historic `ofo.so` host was re-registered by an unrelated party
+in April 2025 and now serves a parked arcade-game lander. There is no Ofo GitHub organization. The
+only package wrapping Ofo's endpoints is a third-party, unofficial Node client last published
+2018-08-14 whose source repository no longer exists.
+
+- Secondary-market listing (harvest source): https://forgeglobal.com/ofo_stock/
