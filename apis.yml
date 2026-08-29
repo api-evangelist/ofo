@@ -17,6 +17,7 @@ description: >-
   by an unrelated party in April 2025 and now serves a parked arcade-game lander. This profile is
   retained as a historical record; there is no API surface to enrich.
 url: https://raw.githubusercontent.com/api-evangelist/ofo/refs/heads/main/apis.yml
+x-harvest-source-url: https://forgeglobal.com/ofo_stock/
 x-type: company
 x-source: harvest:secondary-market
 x-tier: stub
@@ -73,8 +74,6 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
-- type: Website
-  url: https://forgeglobal.com/ofo_stock/
 - type: Packages
   url: packages/ofo-packages.yml
 x-coverage:
