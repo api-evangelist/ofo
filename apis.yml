@@ -42,6 +42,17 @@ x-website-note: >-
   not Ofo's own web presence. It is retained for provenance and traceability back to the backlog
   that surfaced this company; see roadmap#56, which tracks re-typing venue listings across the
   17 providers that carry one.
+deliveryModel:
+  model: library
+  open_source: false
+  commercial: false
+  callable_host: false
+  label: Library · distributed through package registries, no callable service
+  confidence: low
+  source:
+  - none
+  generated: '2026-08-28'
+  method: derived
 specificationVersion: '0.23'
 created: '2026-08-26'
 modified: '2026-08-26'
