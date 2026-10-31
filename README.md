@@ -64,20 +64,38 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Ofo (Chinese: 小黄车, "little yellow bike") was a Beijing dockless bicycle-sharing company founded in
-2014 by Dai Wei and four classmates from the Peking University cycling club, and launched publicly on
-7 September 2015. At its 2017 peak it had deployed more than 10 million bicycles across roughly 250
-cities in 20 countries and was valued at around US$2 billion. Ofo's bikes were unlocked exclusively
-through its own consumer mobile app; the company never operated a developer portal, never published a
-machine-readable API contract, and never shipped official client SDKs. It withdrew from most
-international markets in July 2018, collapsed under a deposit-refund backlog affecting more than 10
-million users from December 2018, and had ceased bike-rental operations by 2020.
+> **No longer operating.** This company or product has shut down, been discontinued, or been deprecated. This profile is kept as a historical record and is not maintained or rated.
 
-**Status: defunct — no API surface.** `ofo.com` still holds a live registration and still resolves,
-but the origin refuses connections on both port 80 and port 443, so no `/.well-known/`, `/openapi.json`
-or `/llms.txt` probe can complete. The historic `ofo.so` host was re-registered by an unrelated party
-in April 2025 and now serves a parked arcade-game lander. There is no Ofo GitHub organization. The
-only package wrapping Ofo's endpoints is a third-party, unofficial Node client last published
-2018-08-14 whose source repository no longer exists.
+Ofo (Chinese: 小黄车, "little yellow bike") was a Beijing dockless bicycle-sharing company founded in 2014 by Dai Wei and four classmates from the Peking University cycling club, and launched publicly on 7 September 2015. At its 2017 peak it had deployed more than 10 million bicycles across roughly 250 cities in 20 countries, reported over 60 million monthly active users, and was valued at around US$2 billion; in March 2018 it raised an $866M round led by Alibaba. Ofo's bikes were unlocked exclusively through its own consumer iOS and Android app. The company never operated a developer portal, never published a machine-readable API contract, and never shipped official client SDKs — the only documentation of its endpoints is third-party reverse-engineering of the private mobile-app API at one.ofo.com. Ofo withdrew from most international markets in July 2018, collapsed under a deposit-refund backlog that left more than 10 million users queuing for refunds from December 2018, and had ceased bike-rental operations by 2020. ofo.com is still registered through Alibaba Cloud and still resolves, but its origin refuses connections on ports 80 and 443; the historic ofo.so host dropped and was re-registered by an unrelated party in April 2025 and now serves a parked arcade-game lander. This profile is retained as a historical record; there is no API surface to enrich.
 
-- Secondary-market listing (harvest source): https://forgeglobal.com/ofo_stock/
+**Areas:** Company · Defunct · Transportation · Mobility · Micromobility · Bike Sharing · Sharing Economy · Consumer · China
+
+## Ofo on APIs.io (historical record)
+
+Everything profiled for Ofo is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/ofo/](https://apis.io/providers/ofo/)** — or go straight to one of the APIs or properties below.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Ofo Domain Security](https://apis.io/security/ofo/ofo-domain-security/)
+
+## API Evangelist rating
+
+**Not rated** — this company is recorded as no longer operating, so no score is published. If it is in fact operating, say so on this repository and it will be re-profiled.
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Ofo: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/ofo/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
